@@ -1,19 +1,16 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
+import Header from './components/Header';
 
 // add styles for header, body, and charly
 
 function App() {
   return (
     <>
-      {/* add Header */}
       {/* add body */}
       {/* ass Feed Charly */}
       <div className="App">
-        <header className="App-header">
-          <h1>SAM AZIMI</h1>
-          <p>JavaScrip Developer</p>
-        </header>
+        <Header/>
         <main className="App-body">
           <section>About</section>
           <section>Projects</section>
