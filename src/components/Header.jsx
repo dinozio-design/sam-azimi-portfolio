@@ -1,4 +1,5 @@
 import React from "react";
+import Navbar from "./Navbar";
 
 export default function Header() {
     return (
@@ -7,6 +8,7 @@ export default function Header() {
                 <h1>SAM AZIMI</h1>
                 <p>JavaScrip Developer</p>
             </header>
+            <Navbar/>
         </>
     );
-}
+};
