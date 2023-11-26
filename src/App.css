@@ -1,20 +1,17 @@
-.App {
-  text-align: center;
-  background-color: #f2e9e4;
-  color: #22223b;
-  font-size: calc(10px + 2vmin);
-  display: flex;
-  flex-direction: column;
-}
-
 section {
   border: thin solid;
   border-color: #4a4e69;
 }
 
+.App {
+  text-align: center;
+  background-color: #f2e9e4;
+  color: #22223b;
+  font-size: calc(10px + 2vmin);
+  display: block;
+}
+
 .App-header {
-  /* background-color: #282c34; */
-  /* min-height: 100vh; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -33,20 +30,24 @@ section {
   color: #22223b;
 }
 
-@media screen and (min-width:992) {
+@media only screen and (min-width:992px) {
   .App {
-    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
   }
 
   .App-header {
-    flex: 1;
+    flex: 2;
+    height: 100vh;
+    justify-content: flex-start;
   }
 
   .App-body {
-    flex: 2;
+    flex: 3;
+    height: 100vh;
   }
 }
-
+/* 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -72,4 +73,4 @@ section {
   to {
     transform: rotate(360deg);
   }
-}
+} */
