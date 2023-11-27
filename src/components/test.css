@@ -46,7 +46,23 @@ body {
     width: 100vw; /* Open the menu to the full width of the viewport */
   }
   
+  /* Move the hamburger icon when menu is open */
   .navbar.open .hamburger {
-    transform: translateX(100vw); /* Move the hamburger icon when menu is open */
+    transform: translateX(100vw); 
   }
   
+  .close-button {
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .close-button:hover {
+    background-color: #c0392b;
+  }
