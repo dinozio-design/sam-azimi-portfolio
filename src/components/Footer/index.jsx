@@ -4,7 +4,7 @@ export default function Footer() {
     return (
         <>
             <footer className="App-footer">
-                <h4>This is the footer</h4>
+                <p>This is the footer</p>
                 <p>All rights reserved</p>
             </footer>
         </>
