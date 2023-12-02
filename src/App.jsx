@@ -1,6 +1,7 @@
 // import logo from './logo.svg';
 import './App.css';
 import Header from './components/Header';
+import MainPage from './pages/MainPage';
 
 // add styles for header, body, and charly
 
@@ -11,11 +12,12 @@ function App() {
       {/* ass Feed Charly */}
       <div className="App">
         <Header/>
-        <main className="App-body">
+        <MainPage/>
+        {/* <main className="App-body">
           <section>About</section>
           <section>Projects</section>
           <section>Footer</section>
-        </main>
+        </main> */}
       </div>
     </>
   );
