@@ -64,6 +64,23 @@ export default function Projects() {
                     <button>Responsive Design</button>
                     <button>HTML</button>
                 </Card>
+                <Card heading = "Note Taker with Express.js">
+                    <p> This app has a very simplified front end, however it showcases the strength of the backend server programing with Express.js. This app is deployed to Heroku. ... CRUD operation ...</p>
+                    <p>GitHub repo link: https://github.com/dinozio-design/11-Note-Taker-ExpressJS</p>
+                    <p>GitHub icon</p>
+                    <p>deployed link on Heroku: https://serene-wave-69834-5e095d541a17.herokuapp.com/</p>
+                    <p>deploy icon</p>
+                    <button>JavaScrip</button>
+                    <button>Express JS</button>
+                    <button>JSON</button>
+                    <button>CRUD</button>
+                    <button>RESTFull</button>
+                    <button>CSS</button>
+                    <button>Bootstrap CSS</button>
+                    <button>Mobile First</button>
+                    <button>Responsive Design</button>
+                    <button>HTML</button>
+                </Card>
             </div>
         </>
     );
