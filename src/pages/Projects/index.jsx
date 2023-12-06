@@ -43,6 +43,27 @@ export default function Projects() {
                     <button>Responsive Design</button>
                     <button>HTML</button>
                 </Card>
+                <Card heading = "CRM Lite">
+                    <p>This app is made for Lawn Maintenance Service business, and is meant to fascilitate scheduling for the business operator. It uses third party api to provide local weather forecast for the customer location, as well as Staturoty Holidays API for calendar booking.... add more description here</p>
+                    <p>GitHub repo link: https://github.com/dinozio-design/CRM-lite</p>
+                    <p>GitHub icon</p>
+                    <p>deployed link: https://dinozio-design.github.io/CRM-lite/</p>
+                    <p>deploy icon</p>
+                    <button>JavaScrip</button>
+                    <button>jQuery</button>
+                    <button>Functional Programming</button>
+                    <button>Object Oriented Programming</button>
+                    <button>JSON</button>
+                    <button>Local Storage</button>
+                    <button>RESTFull</button>
+                    <button>Third Party API</button>
+                    <button>Server Side API</button>
+                    <button>CSS</button>
+                    <button>Bulma CSS</button>
+                    <button>Mobile First</button>
+                    <button>Responsive Design</button>
+                    <button>HTML</button>
+                </Card>
             </div>
         </>
     );
