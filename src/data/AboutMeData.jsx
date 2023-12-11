@@ -1,7 +1,7 @@
 const AboutMeData = [
     {
         title: "My Name is Sam! ... and I am a JavaScript developer.",
-        summary: "Passionate about web development, I embarked on a programming journey, swiftly mastering the MERN stack within six months and delving into Data Engineering and Science through seminars. My future goal is to secure a position in the tech industry, focusing on web development and learning under senior developers. With a background in project coordination and startup operations, I've honed project management and business operation skills. Looking ahead, I aspire to specialize in Computer Vision and Machine Learning, contributing to the tech revolution while continuously learning and evolving.",
+        summary: "Passionate about web development, I embarked on a programming journey, swiftly mastering the MERN stack within six months and delving into Data Engineering and Science through workshops and seminars. My future goal is to secure a position in the tech industry, focusing on web development and learning under tutelage of senior developers. With a background in project coordination and startup operations, I've honed project management and business operation skills. Looking ahead, I aspire to specialize in Computer Vision and Machine Learning, contributing to the tech revolution while continuously learning and evolving.",
         description: ""
     },
     {
@@ -16,8 +16,8 @@ const AboutMeData = [
     },
     {
         title: "My Educations",
-        summary: "",
-        description: "In high school, I harbored a strong inclination toward engineering. During my senior year, I secured a co-op placement at an engineering firm where I honed my skills in AutoCAD and drafting electrical installation drawings. Impressed with my work ethic, they hired me for the summer after graduation. Seeking guidance from my manager, I inquired about choosing an engineering discipline. His advice, emphasizing the importance of pairing engineering with business knowledge, resonated with me. Taking his counsel, I enrolled in McMaster University's Engineering and Management program, a challenging path blending technical engineering, finance, accounting, project management, business strategy, marketing, and administration. Although unconventional, this unique combination provided a holistic education. Grateful for the mentorship of my first engineering manager, Norm Fisher, I reflect on the invaluable advice that shaped my educational journey at McMaster University."
+        summary: "After discovering a passion for engineering in high school, I gained practical experience in AutoCAD and electrical installation drawings through a co-op placement. Following my manager's advice on the importance of combining engineering with business knowledge, I pursued McMaster University's Engineering and Management program, a unique blend of technical engineering, finance, accounting, and more. Excelling in technical subjects, I sought a holistic education. Post-graduation, I embraced the University of Toronto's Coding Bootcamp to integrate my technical prowess with comprehensive business skills. My goal is to leverage technology for efficient and effective business processes. In 2022, my curiosity led me to delve into database architecture, self-learning Python and Postgres, further enriching my skill set.",
+        description: ""
     },
     {
         title: "My Work Experiences",
@@ -26,7 +26,7 @@ const AboutMeData = [
     },
     {
         title: "My Personal Challenges",
-        summary: ""
+        summary: "Over six years, I founded a prosperous B2B enterprise specializing in laser scanning for construction sites. Recognized for cutting-edge solutions, the business enhanced efficiency and precision. With established standards, it served clients in Canada, the US, and the Caribbean, showcasing success in the dynamic construction industry."
     },
     {
         title: "My Future Outlook",
