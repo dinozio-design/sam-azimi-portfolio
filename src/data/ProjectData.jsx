@@ -16,20 +16,20 @@ const ProjectData = [
         keywords: ["JavaScrip", "jQuery", "Functional Programming","Local Storage", "RESTFull", "Third Party API", "Server Side API", "Bulma CSS", "Mobile First", "Responsive Design", "HTML" ]
     },
     {
-        titel: "",
-        description: "",
+        titel: "CRM Lite",
+        description: "This app is made for Lawn Maintenance Service business, and is meant to fascilitate scheduling for the business operator. It uses third party api to provide local weather forecast for the customer location, as well as Staturoty Holidays API for calendar booking.... add more description here",
         image: "",
-        liveLink: "",
-        gitHubLink: "",
-        keywords: ["", ""]
+        liveLink: "https://dinozio-design.github.io/CRM-lite/",
+        gitHubLink: "https://github.com/dinozio-design/CRM-lite",
+        keywords: ["JavaScript", "jQuery", "Functional Programming", "Object Oriented Programming","JSON", "Local Storage", "RESTFull", "Third Party API", "Server Side API", "CSS", "Bulma CSS", "Mobile First", "Responsive Design",  "HTML" ]
     },
     {
-        titel: "",
-        description: "",
+        titel: "Note Taker with Express.js",
+        description: "This app has a very simplified front end, however it showcases the strength of the backend server programing with Express.js. This app is deployed to Heroku. ... CRUD operation ...",
         image: "",
-        liveLink: "",
-        gitHubLink: "",
-        keywords: ["", ""]
+        liveLink: "https://serene-wave-69834-5e095d541a17.herokuapp.com/",
+        gitHubLink: "https://github.com/dinozio-design/11-Note-Taker-ExpressJS",
+        keywords: ["JavaScrip", "Express JS", "JSON", "CRUD","RESTFull", "CSS", "Bootstrap CSS", "Mobile First", "Responsive Design", "HTML"  ]
     },
     {
         titel: "",
