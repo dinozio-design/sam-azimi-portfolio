@@ -1,6 +1,6 @@
 const ProjectData = [
     {
-        titel: "Password Generator",
+        title: "Password Generator",
         description: "This app is a great example of an Object Oriented JavaScript. Instead of using RegEx, I hardcoded every scenario (future refactoring is on the todo list to simplify the code with RegEx. It is in the que!). I used the window.prompt method to open the dialogue box and collect the userResponse for variety of options to generate a strong password. Nowadays every website or app has it's own requirements for a strong password that varries from lenght to Upper/Lowercase and alphanumeric or special characters. This app allows the user to chose any of the necessary requirements for a strong password. After the password is generated, the user then is able to copy the string and paste it to their own password keeper.",
         image: "",
         liveLink: "https://dinozio-design.github.io/03-Password-Generator-JavaScript/",
@@ -8,7 +8,7 @@ const ProjectData = [
         keywords: ["JavaScrip", "Object Oriented Programming (OOP)","CSS", "Media Query", "Mobile First", "Responsive Design", "HTML" ]
     },
     {
-        titel: "Weather Dashboard",
+        title: "Weather Dashboard",
         description: "This app uses Server Side API ... write more description",
         image: "",
         liveLink: "https://dinozio-design.github.io/06-Weather-Dashboard-Server-Side-APIs/",
@@ -16,7 +16,7 @@ const ProjectData = [
         keywords: ["JavaScrip", "jQuery", "Functional Programming","Local Storage", "RESTFull", "Third Party API", "Server Side API", "Bulma CSS", "Mobile First", "Responsive Design", "HTML" ]
     },
     {
-        titel: "CRM Lite",
+        title: "CRM Lite",
         description: "This app is made for Lawn Maintenance Service business, and is meant to fascilitate scheduling for the business operator. It uses third party api to provide local weather forecast for the customer location, as well as Staturoty Holidays API for calendar booking.... add more description here",
         image: "",
         liveLink: "https://dinozio-design.github.io/CRM-lite/",
@@ -24,7 +24,7 @@ const ProjectData = [
         keywords: ["JavaScript", "jQuery", "Functional Programming", "Object Oriented Programming","JSON", "Local Storage", "RESTFull", "Third Party API", "Server Side API", "CSS", "Bulma CSS", "Mobile First", "Responsive Design",  "HTML" ]
     },
     {
-        titel: "Note Taker with Express.js",
+        title: "Note Taker with Express.js",
         description: "This app has a very simplified front end, however it showcases the strength of the backend server programing with Express.js. This app is deployed to Heroku. ... CRUD operation ...",
         image: "",
         liveLink: "https://serene-wave-69834-5e095d541a17.herokuapp.com/",
@@ -32,7 +32,7 @@ const ProjectData = [
         keywords: ["JavaScrip", "Express JS", "JSON", "CRUD","RESTFull", "CSS", "Bootstrap CSS", "Mobile First", "Responsive Design", "HTML"  ]
     },
     {
-        titel: "",
+        title: "",
         description: "",
         image: "",
         liveLink: "",
@@ -40,7 +40,7 @@ const ProjectData = [
         keywords: ["", ""]
     },
     {
-        titel: "",
+        title: "",
         description: "",
         image: "",
         liveLink: "",
