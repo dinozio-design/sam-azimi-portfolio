@@ -4,6 +4,13 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { pdfjs } from 'react-pdf';
+
+//For React-PDF to work, PDF.js worker needs to be provided. 
+pdfjs.GlobalWorkerOptions.workerSrc = new URL(
+  'pdfjs-dist/build/pdf.worker.min.js',
+  import.meta.url,
+).toString();
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
