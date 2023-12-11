@@ -9,7 +9,11 @@ export default function About() {
                 <h2>
                     About Me
                 </h2>
-                
+                <div>
+                    {AboutMeData.map ((data, index)=>(
+                        <MoreAboutMeCard key={index} {...data} />
+                    ))}
+                </div>
             </div>
         </>
     );
