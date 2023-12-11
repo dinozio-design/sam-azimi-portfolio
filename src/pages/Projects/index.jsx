@@ -1,5 +1,7 @@
 import React from "react";
-import Card from "../../layout/Card";
+// import Card from "../../layout/Card";
+import ProjectCard from "./ProjectCard";
+import ProjectData from "../../data/ProjectData";
 
 export default function Projects() {
     return (
