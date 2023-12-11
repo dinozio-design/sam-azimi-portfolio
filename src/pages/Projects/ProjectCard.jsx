@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function ProjectCard({ title, description, image, liveLink, githubLink, keywords }) = {
+export default function ProjectCard({ title, description, image, liveLink, githubLink, keywords }) {
     return (
         <div className="project-card">
             <img src={image} alt={title} />
