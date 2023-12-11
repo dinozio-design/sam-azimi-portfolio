@@ -49,7 +49,7 @@ export default function Projects() {
                     <p>GitHub icon</p>
                     <p>deployed link: https://dinozio-design.github.io/CRM-lite/</p>
                     <p>deploy icon</p>
-                    <button>JavaScrip</button>
+                    <button>JavaScript</button>
                     <button>jQuery</button>
                     <button>Functional Programming</button>
                     <button>Object Oriented Programming</button>
