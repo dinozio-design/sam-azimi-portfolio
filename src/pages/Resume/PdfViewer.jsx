@@ -10,14 +10,26 @@ export default function PdfViewer({ pdf }) {
         setNumPages(numPages);
     };
 
+    const goToPreviousPage = () => {
+        if (pageNumber > 1) {
+            setPageNumber(pageNumber - 1);
+        }
+    };
+
+    const goToNextPage = () => {
+        if (pageNumber < numPages) {
+            setPageNumber(pageNumber + 1);
+        }
+    };
+
     return (
         <div>
-      <Document file="somefile.pdf" onLoadSuccess={onDocumentLoadSuccess}>
-        <Page pageNumber={pageNumber} />
-      </Document>
-      <p>
-        Page {pageNumber} of {numPages}
-      </p>
-    </div>
+            <Document file={pdf} onLoadSuccess={onDocumentLoadSuccess}>
+                <Page pageNumber={pageNumber} />
+            </Document>
+            <p>
+                Page {pageNumber} of {numPages}
+            </p>
+        </div>
     );
 }
