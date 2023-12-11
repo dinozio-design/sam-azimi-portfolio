@@ -8,12 +8,12 @@ const ProjectData = [
         keywords: ["JavaScrip", "Object Oriented Programming (OOP)","CSS", "Media Query", "Mobile First", "Responsive Design", "HTML" ]
     },
     {
-        titel: "",
-        description: "",
+        titel: "Weather Dashboard",
+        description: "This app uses Server Side API ... write more description",
         image: "",
-        liveLink: "",
-        gitHubLink: "",
-        keywords: ["", ""]
+        liveLink: "https://dinozio-design.github.io/06-Weather-Dashboard-Server-Side-APIs/",
+        gitHubLink: "https://github.com/dinozio-design/06-Weather-Dashboard-Server-Side-APIs",
+        keywords: ["JavaScrip", "jQuery", "Functional Programming","Local Storage", "RESTFull", "Third Party API", "Server Side API", "Bulma CSS", "Mobile First", "Responsive Design", "HTML" ]
     },
     {
         titel: "",
