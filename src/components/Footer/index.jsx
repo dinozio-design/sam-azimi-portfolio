@@ -4,8 +4,8 @@ export default function Footer() {
     return (
         <>
             <footer className="App-footer">
-                <p>This is the footer</p>
-                <p>All rights reserved</p>
+                <p></p>
+                <p className='text-body-secondary fst-italic fw-lighter'>This web app is brought to you by:© Sam Azimi - 2023 JavaScrip Developer. Confidential and Proprietary. All Rights Reserved.</p>
             </footer>
         </>
     );
