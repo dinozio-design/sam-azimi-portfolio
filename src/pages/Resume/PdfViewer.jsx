@@ -26,13 +26,12 @@ export default function PdfViewer({ pdf }) {
         <div>
             <button onClick={goToPreviousPage}>Previous Page</button>
             <button onClick={goToNextPage}>Next Page</button>
-            <Document file={pdf} onLoadSuccess={onDocumentLoadSuccess}>
-                <Page pageNumber={pageNumber} />
-            </Document>
             <p>
                 Page {pageNumber} of {numPages}
             </p>
-            
+            <Document file={pdf} onLoadSuccess={onDocumentLoadSuccess}>
+                <Page pageNumber={pageNumber} renderTextLayer={false} />
+            </Document>
         </div>
     );
 }
