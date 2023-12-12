@@ -9,11 +9,11 @@ const styles = {
         alignItems: "center",
         justifyContent: "center",
         fontSize: "calc(10px + 2vmin)",
-        border:" thick solid",
+        border: " thick solid",
         borderColor: "#22223b",
         backgroundColor: "#22223b",
-        color:" #f2e9e4",
-        paddingTop:"1.5em"
+        color: " #f2e9e4",
+        paddingTop: "1.5em"
     },
 
     "@media only screen and (min-width:993px)": {
@@ -27,11 +27,11 @@ const styles = {
 export default function Header() {
     return (
         <>
-            <header style = {styles.appHeaderContainer} className="App-header">
+            <header style={styles.appHeaderContainer} className="App-header">
                 <h1>SAM AZIMI</h1>
                 <p>JavaScrip Developer</p>
             </header>
-            <Navbar/>
+            <Navbar />
         </>
     );
 };
