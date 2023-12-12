@@ -15,11 +15,13 @@ const styles = {
         color:" #f2e9e4",
         paddingTop:"1.5em"
     },
-    headerHeading:{
 
-    },
-    headerText:{
-
+    "@media only screen and (min-width:993px)": {
+        appHeaderContainer: {
+            flex: "2",
+            height: "100vh",
+            justifyContent: "flex-start"
+        }
     }
 };
 export default function Header() {
