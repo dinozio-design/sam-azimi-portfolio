@@ -23,5 +23,5 @@ yarn-debug.log*
 yarn-error.log*
 
 #other
-.doc
-.docx
+*.doc
+*.docx
