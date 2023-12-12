@@ -7,10 +7,12 @@
   .App-header {
     flex: 2;
     height: 100vh;
-    justify-content: flex-start;
+    align-items: flex-start;
+    color: red;
   }
 
-  .App-body {
+
+  .App-mainPage {
     flex: 3;
     height: 100vh;
   }

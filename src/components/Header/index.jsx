@@ -7,12 +7,11 @@ const styles = {
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
-        justifyContent: "center",
         fontSize: "calc(10px + 2vmin)",
-        border: " thick solid",
+        border: "thick solid",
         borderColor: "#22223b",
         backgroundColor: "#22223b",
-        color: " #f2e9e4",
+        color: "#f2e9e4",
         paddingTop: "1.5em"
     },
 
