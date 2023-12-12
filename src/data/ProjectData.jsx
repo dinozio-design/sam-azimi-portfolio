@@ -29,15 +29,15 @@ const ProjectData = [
         image: "",
         liveLink: "https://serene-wave-69834-5e095d541a17.herokuapp.com/",
         gitHubLink: "https://github.com/dinozio-design/11-Note-Taker-ExpressJS",
-        keywords: ["JavaScrip", "Express JS", "JSON", "CRUD","RESTFull", "CSS", "Bootstrap CSS", "Mobile First", "Responsive Design", "HTML"  ]
+        keywords: ["JavaScrip", "Express.js", "JSON", "CRUD","RESTFull", "CSS", "Bootstrap CSS", "Mobile First", "Responsive Design", "HTML"  ]
     },
     {
-        title: "",
-        description: "",
+        title: "eCommerce Backend ORM",
+        description: "I created a backend application using sequelize and Node.js in order to create, seed, and maintain a backend relational database using Object Relational Mapping (ORM) methodologies, to track products and associated categories and tags for an eCommerce application .... add more.",
         image: "",
-        liveLink: "",
-        gitHubLink: "",
-        keywords: ["", ""]
+        liveLink: "https://drive.google.com/file/d/1sNlSMLtALR2E1cHLw3cr7YZUAiKvK0Jh/view",
+        gitHubLink: "https://github.com/dinozio-design/13-E-Commerce-Back-End-ORM",
+        keywords: ["JavaScript", "Node.js","Express.js", "MySQL", "Sequelize", "Nodemon", "Asynchronous Functions"]
     },
     {
         title: "",
