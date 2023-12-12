@@ -1,4 +1,3 @@
-// import logo from './logo.svg';
 // import './App.css';
 import Header from './components/Header';
 import MainPage from './pages/MainPage';
@@ -8,16 +7,9 @@ import MainPage from './pages/MainPage';
 function App() {
   return (
     <>
-      {/* add body */}
-      {/* ass Feed Charly */}
       <div className="App">
         <Header/>
         <MainPage/>
-        {/* <main className="App-body">
-          <section>About</section>
-          <section>Projects</section>
-          <section>Footer</section>
-        </main> */}
       </div>
     </>
   );
