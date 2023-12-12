@@ -44,6 +44,7 @@ export default function PdfViewer({ pdf }) {
             <Document file={pdf} onLoadSuccess={onDocumentLoadSuccess}>
                 <Page pageNumber={pageNumber} renderTextLayer={false} renderAnnotationLayer={false} />
             </Document>
+            <button onClick={handleDownload}>Download Resume</button>
         </div>
     );
 }
