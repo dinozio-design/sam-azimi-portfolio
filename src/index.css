@@ -12,11 +12,15 @@ code {
     monospace;
 }
 
-h2{
+h2, h4 {
   color: #4a4e69;
 }
 
 p {
   font-size: 15px;
   color: #22223b;
+}
+
+.card-header{
+  background-color: #c9ada7;
 }
