@@ -30,8 +30,8 @@ export default function Header() {
             <header style={styles.appHeaderContainer} className="App-header">
                 <h1>SAM AZIMI</h1>
                 <p>JavaScrip Developer</p>
+                <Navbar />
             </header>
-            <Navbar />
         </>
     );
 };
