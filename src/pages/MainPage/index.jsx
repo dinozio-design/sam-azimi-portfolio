@@ -6,7 +6,10 @@ import Resume from "../Resume";
 
 const styles ={
     appMainPageContainer:{
-
+        border: " thick solid",
+        borderColor: "#9a8c98",
+        backgroundColor: "#f2e9e4",
+        padding: "2em"
     },
 
     "@media only screen and (min-width:993px)": {
@@ -18,7 +21,7 @@ const styles ={
 }
 export default function MainPage() {
     return (
-        <div style={styles.appMainPageContainer}>
+        <div className="App-mainPage" style={styles.appMainPageContainer}>
             <About />
             <Projects />
             <Resume />
