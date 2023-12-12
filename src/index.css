@@ -12,6 +12,34 @@ code {
     monospace;
 }
 
+h2{
+  color: #4a4e69;
+}
+
+h4{
+  color: #22223b;
+}
+
 p {
   font-size: 15px;
+  color: #22223b;
+}
+
+.card{
+  border: thick solid;
+  border-color: #9a8c98;
+  margin-bottom: 1em;
+}
+.card-header{
+  background-color: #c9ada7;
+}
+.card-body{
+  background-color: #f2e9e4;
+}
+.project-keywords{
+  font-size: small;
+}
+.project-button{
+  border-color: #9a8c98;
+  color: #4a4e69;
 }
