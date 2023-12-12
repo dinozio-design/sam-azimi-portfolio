@@ -3,6 +3,7 @@ import About from "../About";
 import Footer from "../../components/Footer";
 import Projects from "../Projects";
 import Resume from "../Resume";
+import InfiniteScroll from "react-infinite-scroll-component";
 
 const styles ={
     appMainPageContainer:{
