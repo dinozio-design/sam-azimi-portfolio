@@ -1,4 +1,4 @@
-// import './App.css';
+import './App.css';
 import Header from './components/Header';
 import MainPage from './pages/MainPage';
 
@@ -6,7 +6,7 @@ import MainPage from './pages/MainPage';
 const styles = {
   appContainer: {
     fontSize: "calc(10px + 2vmin)",
-    display: "block"
+    // display: "block"
   },
   "@media only screen and (min-width:993px)": {
     appContainer: {
