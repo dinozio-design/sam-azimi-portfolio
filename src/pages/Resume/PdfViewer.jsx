@@ -24,12 +24,15 @@ export default function PdfViewer({ pdf }) {
 
     return (
         <div>
+            <button onClick={goToPreviousPage}>Previous Page</button>
+            <button onClick={goToNextPage}>Next Page</button>
             <Document file={pdf} onLoadSuccess={onDocumentLoadSuccess}>
                 <Page pageNumber={pageNumber} />
             </Document>
             <p>
                 Page {pageNumber} of {numPages}
             </p>
+            
         </div>
     );
 }
