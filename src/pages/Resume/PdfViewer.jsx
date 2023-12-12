@@ -30,7 +30,7 @@ export default function PdfViewer({ pdf }) {
                 Page {pageNumber} of {numPages}
             </p>
             <Document file={pdf} onLoadSuccess={onDocumentLoadSuccess}>
-                <Page pageNumber={pageNumber} renderTextLayer={false} />
+                <Page pageNumber={pageNumber} renderTextLayer={false} renderAnnotationLayer={false} />
             </Document>
         </div>
     );
