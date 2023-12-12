@@ -12,8 +12,12 @@ code {
     monospace;
 }
 
-h2, h4 {
+h2{
   color: #4a4e69;
+}
+
+h4{
+  color: #22223b;
 }
 
 p {
@@ -23,4 +27,7 @@ p {
 
 .card-header{
   background-color: #c9ada7;
+}
+.card-body{
+  background-color: #f2e9e4;
 }
