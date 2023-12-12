@@ -25,6 +25,11 @@ p {
   color: #22223b;
 }
 
+.card{
+  border: thick solid;
+  border-color: #9a8c98;
+  margin-bottom: 1em;
+}
 .card-header{
   background-color: #c9ada7;
 }
