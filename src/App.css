@@ -6,13 +6,19 @@
   }
 
   .App-header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
     flex: 2;
+    width: 25%;
     /* height: 100vh; */
     align-items: flex-start;
   }
 
   .App-mainPage {
     flex: 3;
+    margin-left: 25%;
     /* height: 100vh; */
   }
 }
