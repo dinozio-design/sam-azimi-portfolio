@@ -5,7 +5,10 @@ import SamAzimiResume from "./SamAzimiResume.pdf"
 export default function Resume() {
     return (
         <>
-            <PdfViewer pdf={SamAzimiResume}/>
+            <h2>
+                My Resume
+            </h2>
+            <PdfViewer pdf={SamAzimiResume} />
         </>
     );
 };

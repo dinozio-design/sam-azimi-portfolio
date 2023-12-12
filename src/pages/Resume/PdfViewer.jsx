@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from 'react';
 import { Document, Page } from "react-pdf";
+import { saveAs } from 'file-saver';
 
 export default function PdfViewer({ pdf }) {
     const [numPages, setNumPages] = useState();
@@ -22,6 +23,17 @@ export default function PdfViewer({ pdf }) {
         }
     };
 
+    const handleDownload = () => {
+        fetch(pdf)
+            .then((response) => response.blob())
+            .then((blob) => {
+                saveAs(blob, 'Sam_Azimi_Resume.pdf');
+            })
+            .catch((error) => {
+                console.error('Error fetching the PDF file:', error);
+            });
+    };
+
     return (
         <div>
             <button onClick={goToPreviousPage}>Previous Page</button>
@@ -32,6 +44,7 @@ export default function PdfViewer({ pdf }) {
             <Document file={pdf} onLoadSuccess={onDocumentLoadSuccess}>
                 <Page pageNumber={pageNumber} renderTextLayer={false} renderAnnotationLayer={false} />
             </Document>
+            <button onClick={handleDownload}>Download Resume</button>
         </div>
     );
 }
