@@ -36,3 +36,10 @@ p {
 .card-body{
   background-color: #f2e9e4;
 }
+.project-keywords{
+  font-size: small;
+}
+.project-button{
+  border-color: #9a8c98;
+  color: #4a4e69;
+}
