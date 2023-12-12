@@ -5,14 +5,7 @@ import MainPage from './pages/MainPage';
 // add styles for header, body, and charly
 const styles = {
   appContainer: {
-    fontSize: "calc(10px + 2vmin)",
-    // display: "block"
-  },
-  "@media only screen and (min-width:993px)": {
-    appContainer: {
-      display: "flex",
-      flexWrap: "wrap"
-    }
+    fontSize: "calc(10px + 2vmin)"
   }
 };
 

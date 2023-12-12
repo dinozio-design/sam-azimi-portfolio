@@ -10,13 +10,6 @@ const styles ={
         borderColor: "#9a8c98",
         backgroundColor: "#f2e9e4",
         padding: "2em"
-    },
-
-    "@media only screen and (min-width:993px)": {
-        appMainPageContainer: {
-            flex: "3",
-            height: "100vh"
-        }
     }
 }
 export default function MainPage() {
