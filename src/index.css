@@ -12,12 +12,12 @@ code {
     monospace;
 }
 
-h2{
-  color: #4a4e69;
+h2 {
+  color: #663399;
 }
 
-h4{
-  color: #22223b;
+h4 {
+  color: #161616;
 }
 
 p {
@@ -25,21 +25,32 @@ p {
   color: #22223b;
 }
 
-.card{
-  border: thick solid;
-  border-color: #9a8c98;
+.card {
   margin-bottom: 1em;
+  border: none;
 }
-.card-header{
-  background-color: #c9ada7;
+
+.card-header {
+  background-color: #e6f3f3;
 }
-.card-body{
-  background-color: #f2e9e4;
+
+.card-body {
+  background-color: #e6f3f3;
 }
-.project-keywords{
+
+.project-keywords {
   font-size: small;
 }
-.project-button{
-  border-color: #9a8c98;
-  color: #4a4e69;
+
+.project-button {
+  border-color: rgb(24, 245, 225);
+  color: #7848aa;
+  background-color: #ebf6f6;
+}
+
+.project-button:hover {
+  border: thick solid;
+  border-color: rgb(24, 245, 225);
+  color: #663399;
+  background-color: rgb(24, 245, 225);
 }
