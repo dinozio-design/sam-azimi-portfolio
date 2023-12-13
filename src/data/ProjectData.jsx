@@ -10,7 +10,7 @@ const ProjectData = [
     {
         title: "Weather Dashboard",
         description: "This app uses Server Side API ... write more description",
-        imageSource: "",
+        imageSource: "./weatherDashboard.png",
         liveLink: "https://dinozio-design.github.io/06-Weather-Dashboard-Server-Side-APIs/",
         gitHubLink: "https://github.com/dinozio-design/06-Weather-Dashboard-Server-Side-APIs",
         keywords: ["JavaScrip", "jQuery", "Functional Programming","Local Storage", "RESTFull", "Third Party API", "Server Side API", "Bulma CSS", "Mobile First", "Responsive Design", "HTML" ]
@@ -18,7 +18,7 @@ const ProjectData = [
     {
         title: "CRM Lite",
         description: "This app is made for Lawn Maintenance Service business, and is meant to fascilitate scheduling for the business operator. It uses third party api to provide local weather forecast for the customer location, as well as Staturoty Holidays API for calendar booking.... add more description here",
-        imageSource: "",
+        imageSource: "./CRMLite.png",
         liveLink: "https://dinozio-design.github.io/CRM-lite/",
         gitHubLink: "https://github.com/dinozio-design/CRM-lite",
         keywords: ["JavaScript", "jQuery", "Functional Programming", "Object Oriented Programming","JSON", "Local Storage", "RESTFull", "Third Party API", "Server Side API", "CSS", "Bulma CSS", "Mobile First", "Responsive Design",  "HTML" ]
@@ -26,7 +26,7 @@ const ProjectData = [
     {
         title: "Note Taker with Express.js",
         description: "This app has a very simplified front end, however it showcases the strength of the backend server programing with Express.js. This app is deployed to Heroku. ... CRUD operation ...",
-        imageSource: "",
+        imageSource: "./noteTaker.png",
         liveLink: "https://serene-wave-69834-5e095d541a17.herokuapp.com/",
         gitHubLink: "https://github.com/dinozio-design/11-Note-Taker-ExpressJS",
         keywords: ["JavaScrip", "Express.js", "JSON", "CRUD","RESTFull", "CSS", "Bootstrap CSS", "Mobile First", "Responsive Design", "HTML"  ]
@@ -34,18 +34,18 @@ const ProjectData = [
     {
         title: "eCommerce Backend ORM",
         description: "I created a backend application using sequelize and Node.js in order to create, seed, and maintain a backend relational database using Object Relational Mapping (ORM) methodologies, to track products and associated categories and tags for an eCommerce application .... add more.",
-        imageSource: "",
+        imageSource: "./eCommerceBackendORM.gif",
         liveLink: "https://drive.google.com/file/d/1sNlSMLtALR2E1cHLw3cr7YZUAiKvK0Jh/view",
         gitHubLink: "https://github.com/dinozio-design/13-E-Commerce-Back-End-ORM",
         keywords: ["JavaScript", "Node.js","Express.js", "MySQL", "Sequelize", "Nodemon", "Asynchronous Functions"]
     },
     {
-        title: "",
-        description: "",
-        imageSource: "",
-        liveLink: "",
-        gitHubLink: "",
-        keywords: ["", ""]
+        title: "Movie Search API",
+        description: "In this React App, enables users to search movie posters and general information of their favorite movies. The GUI input and search bar uses React Form. In the background the App makes an API call to a movie database using axios and fetches the desired information. The app is responsive and has a polished interface. They styling is done with a mix of CSS, Bootstrap, and jsx styles.",
+        imageSource: "./movieSearch.png",
+        liveLink: "https://dinozio-design.github.io/movie-info-api",
+        gitHubLink: "https://github.com/dinozio-design/movie-info-api",
+        keywords: ["React", "Axios", "React Forms", "useState", "useEffect", "CSS", "Bootstrap"]
     },
 
 ];
