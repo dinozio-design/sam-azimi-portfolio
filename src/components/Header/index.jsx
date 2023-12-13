@@ -9,8 +9,8 @@ const styles = {
         alignItems: "center",
         fontSize: "calc(10px + 2vmin)",
         border: "thick solid",
-        borderColor: "#22223b",
-        backgroundColor: "#22223b",
+        borderColor: "#663399",
+        backgroundColor: "#7848aa",
         color: "#f2e9e4",
         paddingTop: "1.5em"
     }

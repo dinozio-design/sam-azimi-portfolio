@@ -9,7 +9,7 @@ const styles = {
     appMainPageContainer: {
         border: " thick solid",
         borderColor: "#9a8c98",
-        backgroundColor: "#f2e9e4",
+        backgroundColor: "#e6f3f3",
         padding: "2em"
     }
 }
