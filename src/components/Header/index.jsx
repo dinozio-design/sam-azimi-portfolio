@@ -13,6 +13,11 @@ const styles = {
         backgroundColor: "#7848aa",
         color: "#f2e9e4",
         paddingTop: "1.5em"
+    },
+    icon: {
+        width: 30,
+        height: 30,
+        marginBottom: "25px"
     }
 };
 export default function Header() {
@@ -22,6 +27,9 @@ export default function Header() {
                 <h1>SAM AZIMI</h1>
                 <h5>JavaScrip Developer</h5>
                 <Navbar />
+                <a href="https://github.com/dinozio-design" target="_blank" rel="noopener noreferrer">
+                    <img style={styles.icon} src="./githubIcon.png" alt="GitHub Logo" />
+                </a>
             </header>
         </>
     );
