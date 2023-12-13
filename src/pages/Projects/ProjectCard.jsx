@@ -1,7 +1,7 @@
 import React from 'react';
 import { Fade } from "react-awesome-reveal";
 
-export default function ProjectCard({ title, description, image, liveLink, gitHubLink, keywords }) {
+export default function ProjectCard({ title, description, imageSource, liveLink, gitHubLink, keywords }) {
     return (
         <div className="card">
             <Fade triggerOnce cascade damping={2}>
@@ -9,7 +9,7 @@ export default function ProjectCard({ title, description, image, liveLink, gitHu
                     <h4>{title}</h4>
                 </div>
                 <div className="card-body">
-                    <img src={image} alt={title} />
+                    <img src={imageSource} alt={title} />
                     <p>{description}</p>
                     <div className="project-links">
                         <a href={liveLink} target="_blank" rel="noopener noreferrer">
