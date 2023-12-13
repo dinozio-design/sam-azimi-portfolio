@@ -1,6 +1,13 @@
 import React from 'react';
 import { Fade } from "react-awesome-reveal";
 
+const styles = {
+    icon: {
+        width: 30,
+        height: 30,
+    }
+};
+
 export default function ProjectCard({ title, description, imageSource, liveLink, gitHubLink, keywords }) {
     return (
         <div className="card">
@@ -13,11 +20,12 @@ export default function ProjectCard({ title, description, imageSource, liveLink,
                     <p>{description}</p>
                     <div className="project-links">
                         <a href={liveLink} target="_blank" rel="noopener noreferrer">
-                            Live Demo
+                            <img style={styles.icon} src="./githubIcon.png" alt="GitHub Logo" />
                         </a>
                         <a href={gitHubLink} target="_blank" rel="noopener noreferrer">
-                            GitHub Repo
+                            <img style={styles.icon} src="./deployIcon.png" alt="Deployed Logo" />
                         </a>
+                        <p></p>
                     </div>
                     <div className="project-keywords">
                         {keywords.map((keyword, index) => (
