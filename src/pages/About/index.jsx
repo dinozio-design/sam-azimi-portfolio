@@ -1,4 +1,5 @@
-import React, { useRef }  from "react";
+import React, { useRef } from "react";
+import { Fade } from "react-awesome-reveal";
 import MoreAboutMeCard from "./MoreAboutMeCard";
 import AboutMeData from "../../data/AboutMeData";
 
@@ -10,11 +11,11 @@ export default function About() {
             <h2>
                 About Me
             </h2>
-            <div>
-                {AboutMeData.map((data, index) => (
-                    <MoreAboutMeCard key={index} {...data} />
-                ))}
-            </div>
+            <Fade bottom cascade damping={0.5}>
+                    {AboutMeData.map((data, index) => (
+                        <MoreAboutMeCard key={index} {...data} />
+                    ))}
+            </Fade>
         </div>
     );
 };
