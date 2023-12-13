@@ -22,7 +22,7 @@
 
   .myImage{
     transform: scale(300%);
-    padding-top: 50%;
+    padding-top: 60%;
     position: sticky;
     /* bottom: 10; */
   }
