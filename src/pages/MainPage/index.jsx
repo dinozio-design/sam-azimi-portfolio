@@ -12,6 +12,10 @@ const styles = {
     backgroundColor: "#e6f3f3",
     padding: "2em",
   },
+  fadeIn: {
+    opacity: 0,
+    transition: "opacity 0.5s ease-in-out",
+  },
 };
 
 export default function MainPage() {
@@ -50,37 +54,37 @@ export default function MainPage() {
     };
   }, []);
 
-  const handleIntersection = (entries) => {
+  const handleIntersection = (entries, observer) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
-        // Load content or perform actions when components are in view
-        console.log(`Component ${entry.target.tagName} is in view!`);
+        entry.target.style.opacity = 1;
+        observer.unobserve(entry.target);
       }
     });
   };
 
   return (
     <div className="App-mainPage" style={styles.appMainPageContainer}>
-      <div ref={aboutRef}>
+      <div ref={aboutRef} style={styles.fadeIn}>
         <Suspense fallback={<div>Loading About...</div>}>
           <LazyAbout />
         </Suspense>
       </div>
-      <div ref={projectsRef}>
+      <div ref={projectsRef} style={styles.fadeIn}>
         <Suspense fallback={<div>Loading Projects...</div>}>
           <LazyProjects />
         </Suspense>
       </div>
-      <div ref={resumeRef}>
+      <div ref={resumeRef} style={styles.fadeIn}>
         <Suspense fallback={<div>Loading Resume...</div>}>
           <LazyResume />
         </Suspense>
       </div>
-      <div ref={footerRef}>
+      <div ref={footerRef} style={styles.fadeIn}>
         <Suspense fallback={<div>Loading Footer...</div>}>
           <LazyFooter />
         </Suspense>
       </div>
     </div>
   );
-};
+}
