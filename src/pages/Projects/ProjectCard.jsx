@@ -1,8 +1,10 @@
 import React from 'react';
+import { Fade, Slide } from "react-awesome-reveal";
 
 export default function ProjectCard({ title, description, image, liveLink, gitHubLink, keywords }) {
     return (
         <div className="card">
+            <Fade triggerOnce cascade damping={2}>
             <div className="card-header text-center">
                 <h4>{title}</h4>
             </div>
@@ -23,6 +25,7 @@ export default function ProjectCard({ title, description, image, liveLink, gitHu
                     ))}
                 </div>
             </div>
+            </Fade>
         </div>
     );
 }
