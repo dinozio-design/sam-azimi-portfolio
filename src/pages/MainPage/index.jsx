@@ -7,14 +7,25 @@ const LazyFooter = lazy(() => import("../../components/Footer"));
 
 const styles = {
   appMainPageContainer: {
-    border: "thick solid",
-    borderColor: "#9a8c98",
     backgroundColor: "#e6f3f3",
-    padding: "2em",
+    
   },
+  spacer: {
+    borderTop: "solid thick",
+    borderColor: "#663399",
+    width: "inherit",
+    height: "auto",
+  },
+  backGroundImage:{
+    width: "100%",
+    height: "auto",
+  },
+
   fadeIn: {
     opacity: 0,
     transition: "opacity 0.5s ease-in-out",
+    padding: "2em",
+
   },
 };
 
@@ -65,21 +76,29 @@ export default function MainPage() {
 
   return (
     <div className="App-mainPage" style={styles.appMainPageContainer}>
+      <section style={styles.spacer}>
+        <img style={styles.backGroundImage} src="./myWorkImage.png"/> 
+      </section>
       <div ref={aboutRef} style={styles.fadeIn}>
         <Suspense fallback={<div>Loading About...</div>}>
           <LazyAbout />
         </Suspense>
       </div>
+      <section style={styles.spacer}>
+        <img style={styles.backGroundImage} src="./backgroundImage.png"/> 
+      </section>
       <div ref={projectsRef} style={styles.fadeIn}>
         <Suspense fallback={<div>Loading Projects...</div>}>
           <LazyProjects />
         </Suspense>
       </div>
+      <section style={styles.spacer}/>
       <div ref={resumeRef} style={styles.fadeIn}>
         <Suspense fallback={<div>Loading Resume...</div>}>
           <LazyResume />
         </Suspense>
       </div>
+      <section style={styles.spacer}/>
       <div ref={footerRef} style={styles.fadeIn}>
         <Suspense fallback={<div>Loading Footer...</div>}>
           <LazyFooter />
