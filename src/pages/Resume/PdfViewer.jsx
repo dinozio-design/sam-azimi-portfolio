@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from 'react';
 import { Document, Page } from "react-pdf";
 import { saveAs } from 'file-saver';
+import { BsRewind, BsFastForward, BsCloudDownload } from "react-icons/bs";
 
 export default function PdfViewer({ pdf }) {
     const [numPages, setNumPages] = useState();
@@ -36,15 +37,16 @@ export default function PdfViewer({ pdf }) {
 
     return (
         <div>
-            <button onClick={goToPreviousPage}>Previous Page</button>
-            <button onClick={goToNextPage}>Next Page</button>
+            <button className="btn btn-outline-secondary" onClick={goToPreviousPage}><BsRewind/> Previous Page</button>
+            <button className="btn btn-outline-secondary" onClick={goToNextPage}> Next Page <BsFastForward /></button>
+            <button className="btn btn-outline-secondary" onClick={handleDownload}> <BsCloudDownload /> Download</button>
             <p>
                 Page {pageNumber} of {numPages}
             </p>
             <Document file={pdf} onLoadSuccess={onDocumentLoadSuccess}>
                 <Page pageNumber={pageNumber} renderTextLayer={false} renderAnnotationLayer={false} />
             </Document>
-            <button onClick={handleDownload}>Download Resume</button>
+            
         </div>
     );
 }
