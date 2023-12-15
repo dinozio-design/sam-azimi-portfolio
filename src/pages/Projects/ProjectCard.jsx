@@ -29,7 +29,7 @@ export default function ProjectCard({ title, description, imageSource, liveLink,
                     </div>
                     <div className="project-keywords">
                         {keywords.map((keyword, index) => (
-                            <button className="btn btn-round project-button" key={index}>{keyword}</button>
+                            <button className="btn btn-round rounded-pill project-button" key={index}>{keyword}</button>
                         ))}
                     </div>
                 </div>
