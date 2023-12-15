@@ -4,6 +4,11 @@ import { Document, Page } from "react-pdf";
 import { saveAs } from 'file-saver';
 import { BsRewind, BsFastForward, BsCloudDownload } from "react-icons/bs";
 
+const styles = {
+    buttonStyles:{
+        margin: "5px"
+    }
+}
 export default function PdfViewer({ pdf }) {
     const [numPages, setNumPages] = useState();
     const [pageNumber, setPageNumber] = useState(1);
@@ -37,14 +42,14 @@ export default function PdfViewer({ pdf }) {
 
     return (
         <div>
-            <button className="btn btn-outline-secondary" onClick={goToPreviousPage}><BsRewind/> Previous Page</button>
-            <button className="btn btn-outline-secondary" onClick={goToNextPage}> Next Page <BsFastForward /></button>
-            <button className="btn btn-outline-secondary" onClick={handleDownload}> <BsCloudDownload /> Download</button>
+            <button style={styles.buttonStyles} className="btn btn-outline-secondary" onClick={goToPreviousPage}><BsRewind/> Previous Page</button>
+            <button style={styles.buttonStyles} className="btn btn-outline-secondary" onClick={goToNextPage}> Next Page <BsFastForward /></button>
+            <button style={styles.buttonStyles} className="btn btn-outline-secondary" onClick={handleDownload}> <BsCloudDownload /> Download</button>
             <p>
                 Page {pageNumber} of {numPages}
             </p>
             <Document file={pdf} onLoadSuccess={onDocumentLoadSuccess}>
-                <Page pageNumber={pageNumber} renderTextLayer={false} renderAnnotationLayer={false} />
+                <Page pageNumber={pageNumber} renderTextLayer={false} renderAnnotationLayer={false} canvasBackground={'#e6f3f3'} />
             </Document>
             
         </div>
