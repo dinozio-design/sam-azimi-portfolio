@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "../Navbar";
+import { BsGithub, BsLinkedin, BsEnvelopeAt, BsTelephone } from "react-icons/bs";
 
 // styling the header
 const styles = {
@@ -30,12 +31,18 @@ export default function Header() {
                 <h1>SAM AZIMI</h1>
                 <h5>JavaScrip Developer</h5>
                 <Navbar />
-                <div>
+                <div className="socials">
                     <a href="https://github.com/dinozio-design" target="_blank" rel="noopener noreferrer">
-                        <img style={styles.icon} src="./githubIcon.png" alt="GitHub Logo" />
+                        <BsGithub />
                     </a>
                     <a href="https://www.linkedin.com/in/sam-azimi-p-eng/" target="_blank" rel="noopener noreferrer">
-                        <img style={styles.icon} src="./linkedInIcon.png" alt="LinkedIn Logo" />
+                        <BsLinkedin />
+                    </a>
+                    <a href="mailto:sam@dinozio.design" target="_blank" rel="noopener noreferrer">
+                        <BsEnvelopeAt />
+                    </a>
+                    <a href="tel:+16476789571" target="_blank" rel="noopener noreferrer">
+                        <BsTelephone />
                     </a>
                 </div>
                 <div className="myImage">
