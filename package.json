@@ -1,6 +1,7 @@
 {
   "name": "sam-azimi-portfolio",
   "version": "0.1.0",
+  "homepage": "https://dinozio-design.github.io/sam-azimi-portfolio",
   "commentedhomepage": "https://dinozio-design.github.io/sam-azimi-portfolio",
   "private": true,
   "dependencies": {
@@ -49,5 +50,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.0"
   }
 }
