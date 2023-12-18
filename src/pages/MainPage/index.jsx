@@ -77,7 +77,7 @@ export default function MainPage() {
   return (
     <div className="App-mainPage" style={styles.appMainPageContainer}>
       <section style={styles.spacer}>
-        <img style={styles.backGroundImage} src="./myWorkImage.png"/> 
+        <img style={styles.backGroundImage} src="./images/myWorkImage.png"/> 
       </section>
       <div ref={aboutRef} style={styles.fadeIn}>
         <Suspense fallback={<div>Loading About...</div>}>
@@ -85,7 +85,7 @@ export default function MainPage() {
         </Suspense>
       </div>
       <section style={styles.spacer}>
-        <img style={styles.backGroundImage} src="./backgroundImage.png"/> 
+        <img style={styles.backGroundImage} src="./images/backgroundImage.png"/> 
       </section>
       <div ref={projectsRef} style={styles.fadeIn}>
         <Suspense fallback={<div>Loading Projects...</div>}>
