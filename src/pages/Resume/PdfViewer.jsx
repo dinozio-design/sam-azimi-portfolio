@@ -55,7 +55,7 @@ export default function PdfViewer() {
             </p>
             {pdf && (
                 <Document file={pdf} onLoadSuccess={onDocumentLoadSuccess}>
-                    <Page pageNumber={pageNumber} renderAnnotationLayer={false} canvasBackground={'#e6f3f3'} />
+                    <Page pageNumber={pageNumber} renderTextLayer={false} renderAnnotationLayer={false} canvasBackground={'#e6f3f3'} />
                 </Document>
             )}
         </div>
