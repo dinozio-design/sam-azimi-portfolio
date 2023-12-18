@@ -43,19 +43,14 @@ p {
 }
 
 .project-button {
-  /* border-color: rgb(24, 245, 225); */
   border-color: #7848aa;
   color: #7848aa;
   background-color: #d8ff8b;
-  /* border-radius: 30%; */
   margin: 5px;
 }
 
 .project-button:hover {
-  /* border: thin solid;
-  border-color: rgb(24, 245, 225); */
-  /* border: none; */
-  
   color: #663399;
-  /* background-color: rgb(24, 245, 225); */
 }
+
+
