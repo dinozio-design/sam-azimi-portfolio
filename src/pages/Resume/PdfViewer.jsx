@@ -1,21 +1,26 @@
-import React from "react";
-import { useState } from 'react';
+import React, { useState, useEffect } from "react";
 import { Document, Page } from "react-pdf";
 import { saveAs } from 'file-saver';
 import { BsRewind, BsFastForward, BsCloudDownload } from "react-icons/bs";
 
 const styles = {
-    buttonStyles:{
+    buttonStyles: {
         margin: "5px"
     }
-}
-export default function PdfViewer({ pdf }) {
+};
+
+export default function PdfViewer() {
     const [numPages, setNumPages] = useState();
     const [pageNumber, setPageNumber] = useState(1);
+    const [pdf, setPdf] = useState(null);
+
+    useEffect(() => {
+        import('./SamAzimiResume.pdf').then((module) => setPdf(module.default));
+    }, []);
 
     function onDocumentLoadSuccess({ numPages }) {
         setNumPages(numPages);
-    };
+    }
 
     const goToPreviousPage = () => {
         if (pageNumber > 1) {
@@ -42,16 +47,17 @@ export default function PdfViewer({ pdf }) {
 
     return (
         <div>
-            <button style={styles.buttonStyles} className="btn btn-outline-secondary" onClick={goToPreviousPage}><BsRewind/> Previous Page</button>
+            <button style={styles.buttonStyles} className="btn btn-outline-secondary" onClick={goToPreviousPage}><BsRewind /> Previous Page</button>
             <button style={styles.buttonStyles} className="btn btn-outline-secondary" onClick={goToNextPage}> Next Page <BsFastForward /></button>
             <button style={styles.buttonStyles} className="btn btn-outline-secondary" onClick={handleDownload}> <BsCloudDownload /> Download</button>
             <p>
                 Page {pageNumber} of {numPages}
             </p>
-            <Document file={pdf} onLoadSuccess={onDocumentLoadSuccess}>
-                <Page pageNumber={pageNumber} renderTextLayer={false} renderAnnotationLayer={false} canvasBackground={'#e6f3f3'} />
-            </Document>
-            
+            {pdf && (
+                <Document file={pdf} onLoadSuccess={onDocumentLoadSuccess}>
+                    <Page pageNumber={pageNumber} renderTextLayer={false} renderAnnotationLayer={false} canvasBackground={'#e6f3f3'} />
+                </Document>
+            )}
         </div>
     );
 }
