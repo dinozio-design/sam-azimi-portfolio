@@ -1,7 +1,6 @@
 import React from "react";
 import { Zoom } from "react-awesome-reveal";
 import PdfViewer from "./PdfViewer";
-import SamAzimiResume from "./SamAzimiResume.pdf"
 
 export default function Resume() {
 
@@ -12,7 +11,7 @@ export default function Resume() {
                 <h2>
                     My Resume
                 </h2>
-                <PdfViewer pdf={SamAzimiResume} />
+                <PdfViewer />
             </Zoom>
         </div>
     );
