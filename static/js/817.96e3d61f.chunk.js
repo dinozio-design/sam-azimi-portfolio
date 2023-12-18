@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunksam_azimi_portfolio=self.webpackChunksam_azimi_portfolio||[]).push([[817],{9817:(e,i,s)=>{s.r(i),s.d(i,{default:()=>r});s(2791);var a=s(184);function r(){return(0,a.jsx)("div",{children:(0,a.jsxs)("footer",{className:"App-footer",children:[(0,a.jsx)("p",{}),(0,a.jsx)("p",{className:"text-body-secondary fst-italic fw-lighter",children:"This web app is brought to you by:\xa9 Sam Azimi - 2023 JavaScrip Developer. Confidential and Proprietary. All Rights Reserved."})]})})}}}]);
+//# sourceMappingURL=817.96e3d61f.chunk.js.map
