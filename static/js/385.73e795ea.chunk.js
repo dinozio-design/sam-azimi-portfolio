@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunksam_azimi_portfolio=self.webpackChunksam_azimi_portfolio||[]).push([[385],{5385:(i,s,a)=>{i.exports=a.p+"static/media/SamAzimiResume.f1680569422838d20223.pdf"}}]);
