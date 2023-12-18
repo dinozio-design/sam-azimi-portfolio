@@ -2,6 +2,7 @@
   "name": "sam-azimi-portfolio",
   "version": "0.1.0",
   "homepage": "https://dinozio-design.github.io/sam-azimi-portfolio",
+  "commentedhomepage": "https://dinozio-design.github.io/sam-azimi-portfolio",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.11.1",
@@ -19,6 +20,10 @@
     "react-router-dom": "^6.18.0",
     "react-scripts": "^5.0.1",
     "web-vitals": "^2.1.4"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "gh-pages": "^6.1.0"
   },
   "scripts": {
     "predeploy": "npm run build",

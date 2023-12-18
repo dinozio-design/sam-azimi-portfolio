@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "../Navbar";
+import { BsGithub, BsLinkedin, BsEnvelopeAt, BsTelephone } from "react-icons/bs";
 
 // styling the header
 const styles = {
@@ -14,10 +15,9 @@ const styles = {
         color: "#f2e9e4",
         paddingTop: "1.5em"
     },
-    icon: {
-        width: 30,
-        height: 30,
-        margin: "15px"
+    iconStyle: {
+        color: "white", 
+        margin: "4px"
     },
     myImage: {
         width: 150,
@@ -30,17 +30,23 @@ export default function Header() {
                 <h1>SAM AZIMI</h1>
                 <h5>JavaScrip Developer</h5>
                 <Navbar />
-                <div>
+                <div className="socials">
                     <a href="https://github.com/dinozio-design" target="_blank" rel="noopener noreferrer">
-                        <img style={styles.icon} src="./githubIcon.png" alt="GitHub Logo" />
+                        <BsGithub style={styles.iconStyle}/>
                     </a>
                     <a href="https://www.linkedin.com/in/sam-azimi-p-eng/" target="_blank" rel="noopener noreferrer">
-                        <img style={styles.icon} src="./linkedInIcon.png" alt="LinkedIn Logo" />
+                        <BsLinkedin style={styles.iconStyle}/>
+                    </a>
+                    <a href="mailto:sam@dinozio.design" target="_blank" rel="noopener noreferrer">
+                        <BsEnvelopeAt style={styles.iconStyle}/>
+                    </a>
+                    <a href="tel:+16476789571" target="_blank" rel="noopener noreferrer">
+                        <BsTelephone style={styles.iconStyle}/>
                     </a>
                 </div>
                 <div className="myImage">
                     <a href="" target="_blank" rel="noopener noreferrer">
-                        <img style={styles.myImage}  src="./developerPicture.png" alt="GitHub Logo" />
+                        <img style={styles.myImage}  src="./images/developerPicture.png" alt="GitHub Logo" />
                     </a>
                 </div>
                 

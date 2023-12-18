@@ -1,11 +1,12 @@
 import React from 'react';
 import { Fade } from "react-awesome-reveal";
+import { BsRocketTakeoff, BsGithub } from "react-icons/bs";
 
 const styles = {
-    icon: {
-        width: 30,
-        height: 30,
-    }
+    iconStyle: {
+        color: "#7848aa", 
+        margin: "4px"
+    },
 };
 
 export default function ProjectCard({ title, description, imageSource, liveLink, gitHubLink, keywords }) {
@@ -20,10 +21,10 @@ export default function ProjectCard({ title, description, imageSource, liveLink,
                     <p>{description}</p>
                     <div className="project-links">
                         <a href={liveLink} target="_blank" rel="noopener noreferrer">
-                            <img style={styles.icon} src="./githubIcon.png" alt="GitHub Logo" />
+                            <BsRocketTakeoff style={styles.iconStyle}/>
                         </a>
                         <a href={gitHubLink} target="_blank" rel="noopener noreferrer">
-                            <img style={styles.icon} src="./deployIcon.png" alt="Deployed Logo" />
+                            <BsGithub style={styles.iconStyle}/>
                         </a>
                         <p></p>
                     </div>
