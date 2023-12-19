@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { saveAs } from 'file-saver';
 import { BsRewind, BsFastForward, BsCloudDownload } from "react-icons/bs";
+import { Tooltip } from "react-tooltip";
 import MyResumePage1 from "./images/SamAzimi_Resume_Page1.png";
 import MyResumePage2 from "./images/SamAzimi_Resume_Page2.png";
 
@@ -61,7 +62,7 @@ export default function PdfViewer() {
         <div>
             <button style={styles.buttonStyles} className="btn btn-outline-secondary" onClick={goToPreviousPage}><BsRewind /> Previous Page</button>
             <button style={styles.buttonStyles} className="btn btn-outline-secondary" onClick={goToNextPage}> Next Page <BsFastForward /></button>
-            <button style={styles.buttonStyles} className="btn btn-outline-secondary" onClick={handleDownload}> <BsCloudDownload /> Download</button>
+            <button style={styles.buttonStyles} className="btn btn-outline-secondary" onClick={handleDownload} data-tooltip-id="DWNLD-tooltip" data-tooltip-content="Click to Download Resume PDF File" data-tooltip-place="bottom"> <BsCloudDownload /> Download</button><Tooltip id="DWNLD-tooltip" opacity={.5} style={{fontSize:"12px"}}/>
             <p>
                 Page {pageNumber} of {numPages}
             </p>
