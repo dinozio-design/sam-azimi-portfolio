@@ -1,7 +1,11 @@
 import React, { useState, useEffect } from "react";
-import { Document, Page } from "react-pdf";
+// import { Document, Page } from "react-pdf";
 import { saveAs } from 'file-saver';
 import { BsRewind, BsFastForward, BsCloudDownload } from "react-icons/bs";
+// import images of pdf
+// set page number constant
+// trigger buttons to show pdf pages 
+
 
 const styles = {
     buttonStyles: {
@@ -10,9 +14,11 @@ const styles = {
 };
 
 export default function PdfViewer() {
-    const [numPages, setNumPages] = useState();
+    // const [numPages, setNumPages] = useState();
     const [pageNumber, setPageNumber] = useState(1);
     const [pdf, setPdf] = useState(null);
+
+    const numPages = 2;
 
     useEffect(() => {
         import('./SamAzimiResume.pdf').then((module) => {
@@ -22,9 +28,9 @@ export default function PdfViewer() {
             .catch((error) => console.error('Error loading PDF file:', error));
     }, []);
 
-    function onDocumentLoadSuccess({ numPages }) {
-        setNumPages(numPages);
-    }
+    // function onDocumentLoadSuccess({ numPages }) {
+    //     setNumPages(numPages);
+    // }
 
     const goToPreviousPage = () => {
         if (pageNumber > 1) {
@@ -57,11 +63,14 @@ export default function PdfViewer() {
             <p>
                 Page {pageNumber} of {numPages}
             </p>
-            {pdf && (
+            {/* create div element and set the style dynamically when next page button is pushed.
+            this will render one page at a time */}
+            
+            {/* {pdf && (
                 <Document file={pdf} onLoadSuccess={onDocumentLoadSuccess}>
                     <Page pageNumber={pageNumber} renderTextLayer={false} renderAnnotationLayer={false} canvasBackground={'#e6f3f3'} />
                 </Document>
-            )}
+            )} */}
         </div>
     );
 }
