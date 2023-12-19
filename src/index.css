@@ -75,6 +75,8 @@ p {
 
 .rocket {
   display: inline-block;
+  margin-top: 20px;
+  margin-left: 100px;
 }
 
 .animateRocket {
@@ -101,6 +103,4 @@ p {
   100% {
     transform: scale(20) translate3d(100vw, -100vh, 0) rotate(10deg);
   }
-  
-
 }
