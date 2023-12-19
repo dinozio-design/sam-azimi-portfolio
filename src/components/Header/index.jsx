@@ -28,7 +28,7 @@ export default function Header() {
         <>
             <header style={styles.appHeaderContainer} className="App-header">
                 <h1>SAM AZIMI</h1>
-                <h5>JavaScrip Developer</h5>
+                <h5>JavaScript Developer</h5>
                 <Navbar />
                 <div className="socials">
                     <a href="https://github.com/dinozio-design" target="_blank" rel="noopener noreferrer">
