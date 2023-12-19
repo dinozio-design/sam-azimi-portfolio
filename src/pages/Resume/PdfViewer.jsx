@@ -1,14 +1,15 @@
 import React, { useState, useEffect } from "react";
 import { saveAs } from 'file-saver';
 import { BsRewind, BsFastForward, BsCloudDownload } from "react-icons/bs";
-// import images of pdf
-// set page number constant
-// trigger buttons to show pdf pages 
-
+import MyResumePage1 from "./images/SamAzimi_Resume_Page1.png";
+import MyResumePage2 from "./images/SamAzimi_Resume_Page2.png";
 
 const styles = {
     buttonStyles: {
         margin: "5px"
+    },
+    resumeImageStyle:{
+        width: "100%"
     }
 };
 
@@ -49,6 +50,12 @@ export default function PdfViewer() {
                 console.error('Error fetching the PDF file:', error);
             });
     };
+    const resumePage = () => {
+        if (pageNumber === 2) {
+            return <img style={styles.resumeImageStyle} src={MyResumePage2} alt="Sam Azimi Resume Page 2" />;
+        }
+        return <img style={styles.resumeImageStyle} src={MyResumePage1} alt="Sam Azimi Resume Page 1"/>;
+    };
 
     return (
         <div>
@@ -58,9 +65,9 @@ export default function PdfViewer() {
             <p>
                 Page {pageNumber} of {numPages}
             </p>
-            {/* create div element and set the style dynamically when next page button is pushed.
-            this will render one page at a time */}
-
+            <div className="resumeContainer">
+                {resumePage()}
+            </div>
         </div>
     );
 }
