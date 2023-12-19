@@ -53,4 +53,22 @@ p {
   color: #663399;
 }
 
+.scroll-to-top-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #7848aa;
+  color:#d8ff8b;
+  border: none;
+  border-radius: 20px;
+  padding: 10px;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  z-index: 2;
+}
 
+.scroll-to-top-button.visible {
+  opacity: 1;
+
+}
