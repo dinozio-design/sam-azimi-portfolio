@@ -23,7 +23,6 @@ const styles = {
 
   fadeIn: {
     padding: "2em",
-
   },
 };
 
