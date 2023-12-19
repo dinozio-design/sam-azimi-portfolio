@@ -8,7 +8,7 @@ import './index.css';
 
 //For React-PDF to work, PDF.js worker needs to be provided. 
 pdfjs.GlobalWorkerOptions.workerSrc = new URL(
-  'pdfjs-dist/build/pdf.worker.min.js',
+  'pdfjs-dist/build/pdf.worker.min.mjs',
   import.meta.url,
 ).toString();
 
