@@ -57,10 +57,10 @@ p {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background-color: #007bff;
-  color: #fff;
+  background-color: #7848aa;
+  color:#d8ff8b;
   border: none;
-  border-radius: 5px;
+  border-radius: 20px;
   padding: 10px;
   cursor: pointer;
   opacity: 0;

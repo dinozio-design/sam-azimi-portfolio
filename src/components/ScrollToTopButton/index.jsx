@@ -26,10 +26,10 @@ export default function ScrollToTopButton()  {
   
     return (
       <div
-        className={`scroll-to-top-button ${isVisible ? 'visible' : ''}`}
+        className={`scroll-to-top-button btn  ${isVisible ? 'visible' : ''}`}
         onClick={scrollToTop}
       >
-        <FaArrowUp />
+        <FaArrowUp /> Go to Top
       </div>
     );
   };
