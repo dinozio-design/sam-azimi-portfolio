@@ -46,7 +46,7 @@ export default function Header() {
                 </div>
                 <div className="myImage">
                     <a href="" target="_blank" rel="noopener noreferrer">
-                        <img style={styles.myImage}  src="./images/developerPicture.png" alt="GitHub Logo" />
+                        <img style={styles.myImage}  src="./images/developerPicture.png" alt="My Picture" />
                     </a>
                 </div>
                 
