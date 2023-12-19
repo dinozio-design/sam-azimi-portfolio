@@ -41,15 +41,14 @@ export default function PdfViewer() {
         }
     };
 
-    const handleDownload = () => {
-        fetch(pdf)
-            .then((response) => response.blob())
-            .then((blob) => {
-                saveAs(blob, 'Sam_Azimi_Resume.pdf');
-            })
-            .catch((error) => {
-                console.error('Error fetching the PDF file:', error);
-            });
+    const handleDownload = async () => {
+        try{
+            const response = await fetch(pdf);
+            const blob = await response.blob();
+            saveAs(blob, 'Sam_Azimi_Resume.pdf');
+        } catch (error) {
+            console.error('Error fetching the PDF file:', error);
+        };
     };
     const resumePage = () => {
         if (pageNumber === 2) {
