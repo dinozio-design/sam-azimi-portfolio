@@ -1,6 +1,7 @@
 import React from 'react';
 import { Fade } from "react-awesome-reveal";
 import { BsRocketTakeoff, BsGithub } from "react-icons/bs";
+import { Tooltip } from "react-tooltip";
 
 const styles = {
     iconStyle: {
@@ -20,12 +21,12 @@ export default function ProjectCard({ title, description, imageSource, liveLink,
                     <img src={imageSource} alt={title} />
                     <p>{description}</p>
                     <div className="project-links">
-                        <a href={liveLink} target="_blank" rel="noopener noreferrer">
+                        <a href={liveLink} target="_blank" rel="noopener noreferrer" data-tooltip-id="DEP-tooltip" data-tooltip-content="Visit Deployment" data-tooltip-place="bottom">
                             <BsRocketTakeoff style={styles.iconStyle}/>
-                        </a>
-                        <a href={gitHubLink} target="_blank" rel="noopener noreferrer">
+                        </a> <Tooltip id="DEP-tooltip" opacity={.5} style={{fontSize:"12px"}}/>
+                        <a href={gitHubLink} target="_blank" rel="noopener noreferrer" data-tooltip-id="GHR-tooltip" data-tooltip-content="Visit GitHub Repository" data-tooltip-place="bottom">
                             <BsGithub style={styles.iconStyle}/>
-                        </a>
+                        </a> <Tooltip id="GHR-tooltip" opacity={.5} style={{fontSize:"12px"}}/>
                         <p></p>
                     </div>
                     <div className="project-keywords">
