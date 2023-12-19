@@ -1,8 +1,8 @@
 {
   "name": "sam-azimi-portfolio",
   "version": "0.1.1",
-  "homepage": "",
-  "commentedhomepage": "https://dinozio-design.github.io/sam-azimi-portfolio",
+  "homepage": "https://dinozio-design.github.io/sam-azimi-portfolio",
+  "commentedhomepage": "",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.11.1",
