@@ -1,18 +1,23 @@
 import React, { useState, useEffect } from "react";
-import { Document, Page } from "react-pdf";
 import { saveAs } from 'file-saver';
 import { BsRewind, BsFastForward, BsCloudDownload } from "react-icons/bs";
+import MyResumePage1 from "./images/SamAzimi_Resume_Page1.png";
+import MyResumePage2 from "./images/SamAzimi_Resume_Page2.png";
 
 const styles = {
     buttonStyles: {
         margin: "5px"
+    },
+    resumeImageStyle:{
+        width: "100%"
     }
 };
 
 export default function PdfViewer() {
-    const [numPages, setNumPages] = useState();
     const [pageNumber, setPageNumber] = useState(1);
     const [pdf, setPdf] = useState(null);
+
+    const numPages = 2;
 
     useEffect(() => {
         import('./SamAzimiResume.pdf').then((module) => {
@@ -22,9 +27,6 @@ export default function PdfViewer() {
             .catch((error) => console.error('Error loading PDF file:', error));
     }, []);
 
-    function onDocumentLoadSuccess({ numPages }) {
-        setNumPages(numPages);
-    }
 
     const goToPreviousPage = () => {
         if (pageNumber > 1) {
@@ -48,6 +50,12 @@ export default function PdfViewer() {
                 console.error('Error fetching the PDF file:', error);
             });
     };
+    const resumePage = () => {
+        if (pageNumber === 2) {
+            return <img style={styles.resumeImageStyle} src={MyResumePage2} alt="Sam Azimi Resume Page 2" />;
+        }
+        return <img style={styles.resumeImageStyle} src={MyResumePage1} alt="Sam Azimi Resume Page 1"/>;
+    };
 
     return (
         <div>
@@ -57,11 +65,9 @@ export default function PdfViewer() {
             <p>
                 Page {pageNumber} of {numPages}
             </p>
-            {pdf && (
-                <Document file={pdf} onLoadSuccess={onDocumentLoadSuccess}>
-                    <Page pageNumber={pageNumber} renderTextLayer={false} renderAnnotationLayer={false} canvasBackground={'#e6f3f3'} />
-                </Document>
-            )}
+            <div className="resumeContainer">
+                {resumePage()}
+            </div>
         </div>
     );
 }
