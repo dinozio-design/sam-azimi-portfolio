@@ -45,11 +45,9 @@ export default function MainPage() {
       <section style={styles.spacer}>
         <img style={styles.backGroundImage} src="./images/backgroundImage.png" />
       </section>
-      <section>
+      <section ref={rocketRef}>
         <Suspense fallback={<div>Loading Projects...</div>}>
-          <div ref={rocketRef}>
             <span className={`rocket ${rocketIsVisible ? "animateRocket" : ""}`}> <BsRocketTakeoff /> </span>
-          </div>
         </Suspense>
       </section>
       <div style={styles.fadeIn}>
