@@ -1,4 +1,4 @@
-@media only screen and (min-width:993px) {
+@media only screen and (min-width:992px) {
   .App {
     display: flex;
     flex-wrap: wrap;
@@ -20,11 +20,23 @@
     margin-left: 275px;
   }
 
-  .myImage{
+  .myImage {
     transform: scale(300%);
     position: fixed;
     bottom: 75px;
     left: 90px;
     z-index: -1;
+  }
+
+  nav {
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+  .navlinks {
+    flex-direction: column;
+  }
+
+  .navlinks li {
+    margin: 0;
   }
 }

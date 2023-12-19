@@ -1,20 +1,28 @@
-import React, { useState, useEffect } from "react";
-import { Link , useLocation} from "react-router-dom";
+import React, { useState } from "react";
 
+export default function Navbar(){
+  const [activeLink, setActiveLink] = useState(null);
 
-export default function Navbar() {
-    const [isNavOpen, setNavOpen] = useState(false);
+  const handleLinkClick = (index) => {
+    setActiveLink(index);
+  };
 
-    const toggleNav = ()=>{
-        setNavOpen(!isNavOpen);
-    };
-    const closeNav = ()=>{
-        setNavOpen(false);
-    };
-
-    return (
-        <div className={"navbar"}>
-
-        </div>
-    );
+  return (
+    <nav>
+      <ul className="navlinks">
+        <li>
+          <a href="#about" className={activeLink === 0 ? "active" : ""}
+            onClick={() => handleLinkClick(0)}>About</a>
+        </li>
+        <li>
+          <a href="#projects" className={activeLink === 1 ? "active" : ""}
+            onClick={() => handleLinkClick(1)}>Projects</a>
+        </li>
+        <li>
+          <a href="#resume" className={activeLink === 2 ? "active" : ""}
+            onClick={() => handleLinkClick(2)}>Resume</a>
+        </li>
+      </ul>
+    </nav>
+  );
 };

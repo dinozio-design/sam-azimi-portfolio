@@ -104,3 +104,29 @@ p {
     transform: scale(20) translate3d(100vw, -100vh, 0) rotate(10deg);
   }
 }
+.navlinks {
+  display: flex;
+  padding-left: 0;
+  flex-direction: row;
+  align-items: center;
+  list-style-type: none;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.navlinks li {
+  margin-right: 15px;
+  a {
+      text-decoration: none;
+      color: #fff;
+      position: relative;
+      transition: color 0.3s;
+      font-size: 18px;
+  }
+  a:active {
+      text-decoration: underline;
+  }
+  a:hover {
+      color: #5fff55;
+  }
+}
