@@ -8,7 +8,7 @@ export default function Resume() {
 
     return (
         <div >
-            <Zoom cascade damping={.5}>
+            <Zoom triggerOnce cascade damping={.5}>
                 <h2>
                     My Resume
                 </h2>
