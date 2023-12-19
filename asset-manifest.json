@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/sam-azimi-portfolio/static/css/main.f7d51370.css",
-    "main.js": "/sam-azimi-portfolio/static/js/main.b16c8916.js",
+    "main.css": "/sam-azimi-portfolio/static/css/main.0dd98ad8.css",
+    "main.js": "/sam-azimi-portfolio/static/js/main.9e6eac7e.js",
     "static/js/142.4e83d6d0.chunk.js": "/sam-azimi-portfolio/static/js/142.4e83d6d0.chunk.js",
     "static/js/333.865b730c.chunk.js": "/sam-azimi-portfolio/static/js/333.865b730c.chunk.js",
-    "static/js/183.107eebb1.chunk.js": "/sam-azimi-portfolio/static/js/183.107eebb1.chunk.js",
+    "static/js/183.43687e44.chunk.js": "/sam-azimi-portfolio/static/js/183.43687e44.chunk.js",
     "static/js/817.96e3d61f.chunk.js": "/sam-azimi-portfolio/static/js/817.96e3d61f.chunk.js",
     "static/js/787.16f6715e.chunk.js": "/sam-azimi-portfolio/static/js/787.16f6715e.chunk.js",
     "static/js/735.69b534a3.chunk.js": "/sam-azimi-portfolio/static/js/735.69b534a3.chunk.js",
@@ -13,17 +13,17 @@
     "static/media/SamAzimi_Resume_Page1.png": "/sam-azimi-portfolio/static/media/SamAzimi_Resume_Page1.733c27ff2f5790cd42ba.png",
     "static/media/SamAzimiResume.pdf": "/sam-azimi-portfolio/static/media/SamAzimiResume.f1680569422838d20223.pdf",
     "index.html": "/sam-azimi-portfolio/index.html",
-    "main.f7d51370.css.map": "/sam-azimi-portfolio/static/css/main.f7d51370.css.map",
-    "main.b16c8916.js.map": "/sam-azimi-portfolio/static/js/main.b16c8916.js.map",
+    "main.0dd98ad8.css.map": "/sam-azimi-portfolio/static/css/main.0dd98ad8.css.map",
+    "main.9e6eac7e.js.map": "/sam-azimi-portfolio/static/js/main.9e6eac7e.js.map",
     "142.4e83d6d0.chunk.js.map": "/sam-azimi-portfolio/static/js/142.4e83d6d0.chunk.js.map",
     "333.865b730c.chunk.js.map": "/sam-azimi-portfolio/static/js/333.865b730c.chunk.js.map",
-    "183.107eebb1.chunk.js.map": "/sam-azimi-portfolio/static/js/183.107eebb1.chunk.js.map",
+    "183.43687e44.chunk.js.map": "/sam-azimi-portfolio/static/js/183.43687e44.chunk.js.map",
     "817.96e3d61f.chunk.js.map": "/sam-azimi-portfolio/static/js/817.96e3d61f.chunk.js.map",
     "787.16f6715e.chunk.js.map": "/sam-azimi-portfolio/static/js/787.16f6715e.chunk.js.map",
     "735.69b534a3.chunk.js.map": "/sam-azimi-portfolio/static/js/735.69b534a3.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f7d51370.css",
-    "static/js/main.b16c8916.js"
+    "static/css/main.0dd98ad8.css",
+    "static/js/main.9e6eac7e.js"
   ]
 }
