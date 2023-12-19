@@ -34,7 +34,7 @@ export default function MainPage() {
   return (
     <div className="App-mainPage" style={styles.appMainPageContainer}>
       <ScrollToTopButton />
-      <section style={styles.spacer}>
+      <section id="about" style={styles.spacer}>
         <img style={styles.backGroundImage} src="./images/myWorkImage.png" />
       </section>
       <div style={styles.fadeIn}>
@@ -42,12 +42,12 @@ export default function MainPage() {
           <LazyAbout />
         </Suspense>
       </div>
-      <section style={styles.spacer}>
+      <section id="projects" style={styles.spacer}>
         <img style={styles.backGroundImage} src="./images/backgroundImage.png" />
       </section>
       <section ref={rocketRef}>
         <Suspense fallback={<div>Loading Projects...</div>}>
-            <span className={`rocket ${rocketIsVisible ? "animateRocket" : ""}`}> <BsRocketTakeoff /> </span>
+          <span className={`rocket ${rocketIsVisible ? "animateRocket" : ""}`}> <BsRocketTakeoff /> </span>
         </Suspense>
       </section>
       <div style={styles.fadeIn}>
@@ -55,7 +55,7 @@ export default function MainPage() {
           <LazyProjects />
         </Suspense>
       </div>
-      <section style={styles.spacer} />
+      <section id="resume" style={styles.spacer} />
       <div style={styles.fadeIn}>
         <Suspense fallback={<div>Loading Resume...</div>}>
           <LazyResume />

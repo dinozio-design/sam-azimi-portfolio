@@ -1,20 +1,19 @@
-import React, { useState, useEffect } from "react";
-import { Link , useLocation} from "react-router-dom";
+import React from "react";
 
-
-export default function Navbar() {
-    const [isNavOpen, setNavOpen] = useState(false);
-
-    const toggleNav = ()=>{
-        setNavOpen(!isNavOpen);
-    };
-    const closeNav = ()=>{
-        setNavOpen(false);
-    };
-
-    return (
-        <div className={"navbar"}>
-
-        </div>
-    );
+export default function Navbar(){
+  return (
+    <nav>
+      <ul>
+        <li>
+          <a href="#about">About</a>
+        </li>
+        <li>
+          <a href="#projects">Projects</a>
+        </li>
+        <li>
+          <a href="#resume">Resume</a>
+        </li>
+      </ul>
+    </nav>
+  );
 };
