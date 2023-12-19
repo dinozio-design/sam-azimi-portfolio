@@ -15,14 +15,6 @@ export default function PdfViewer() {
     const [pdf, setPdf] = useState(null);
 
     useEffect(() => {
-        import('pdfjs-dist/build/pdf.js').then((module) => {
-            // Ensure pdfjs.GlobalWorkerOptions is set
-            pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.js`;
-            setPdf(module);
-        });
-    }, []);
-    
-    useEffect(() => {
         import('./SamAzimiResume.pdf').then((module) => {
             console.log('PDF module:', module);
             setPdf(module.default);
