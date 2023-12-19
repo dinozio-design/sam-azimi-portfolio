@@ -1,0 +1,26 @@
+.navlinks {
+    display: flex;
+    padding-left: 0;
+    flex-direction: row;
+    align-items: center;
+    list-style-type: none;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.navlinks li {
+    margin: 4px;
+    a {
+        text-decoration: none;
+        color: #fff;
+        position: relative;
+        transition: color 0.3s;
+        font-size: 18px;
+    }
+    a:active {
+        text-decoration: underline;
+    }
+    a:hover {
+        color: #5fff55;
+    }
+}

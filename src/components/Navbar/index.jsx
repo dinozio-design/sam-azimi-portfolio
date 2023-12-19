@@ -1,17 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
 
 export default function Navbar(){
+  const [activeLink, setActiveLink] = useState(null);
+
+  const handleLinkClick = (index) => {
+    setActiveLink(index);
+  };
+
   return (
     <nav>
-      <ul>
+      <ul className="navlinks">
         <li>
-          <a href="#about">About</a>
+          <a href="#about" className={activeLink === 0 ? "active" : ""}
+            onClick={() => handleLinkClick(0)}>About</a>
         </li>
         <li>
-          <a href="#projects">Projects</a>
+          <a href="#projects" className={activeLink === 1 ? "active" : ""}
+            onClick={() => handleLinkClick(1)}>Projects</a>
         </li>
         <li>
-          <a href="#resume">Resume</a>
+          <a href="#resume" className={activeLink === 2 ? "active" : ""}
+            onClick={() => handleLinkClick(2)}>Resume</a>
         </li>
       </ul>
     </nav>
