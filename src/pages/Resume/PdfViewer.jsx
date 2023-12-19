@@ -22,7 +22,6 @@ export default function PdfViewer() {
 
     useEffect(() => {
         import('./SamAzimiResume.pdf').then((module) => {
-            console.log('PDF module:', module);
             setPdf(module.default);
         })
             .catch((error) => console.error('Error loading PDF file:', error));
