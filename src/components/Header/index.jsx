@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "../Navbar";
 import { BsGithub, BsLinkedin, BsEnvelopeAt, BsTelephone } from "react-icons/bs";
+import { Tooltip } from "react-tooltip";
 
 // styling the header
 const styles = {
@@ -31,9 +32,9 @@ export default function Header() {
                 <h5>JavaScript Developer</h5>
                 <Navbar />
                 <div className="socials">
-                    <a href="https://github.com/dinozio-design" target="_blank" rel="noopener noreferrer">
+                    <a href="https://github.com/dinozio-design" target="_blank" rel="noopener noreferrer" data-tooltip-id="my-tooltip" data-tooltip-content="Go to my GitHub Page" data-tooltip-place="bottom">
                         <BsGithub style={styles.iconStyle}/>
-                    </a>
+                    </a> <Tooltip id="my-tooltip" opacity={.5} style={{fontSize:"12px"}}/>
                     <a href="https://www.linkedin.com/in/sam-azimi-p-eng/" target="_blank" rel="noopener noreferrer">
                         <BsLinkedin style={styles.iconStyle}/>
                     </a>

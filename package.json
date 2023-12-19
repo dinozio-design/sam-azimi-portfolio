@@ -1,7 +1,8 @@
 {
   "name": "sam-azimi-portfolio",
   "version": "0.1.1",
-  "homepage": "https://dinozio-design.github.io/sam-azimi-portfolio",
+  "homepage": "",
+  "commentedhomepage": "https://dinozio-design.github.io/sam-azimi-portfolio",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.11.1",
@@ -19,6 +20,7 @@
     "react-router": "^6.18.0",
     "react-router-dom": "^6.18.0",
     "react-scripts": "^5.0.1",
+    "react-tooltip": "^5.25.0",
     "web-vitals": "^2.1.4"
   },
   "devDependencies": {
