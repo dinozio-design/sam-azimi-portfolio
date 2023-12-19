@@ -1,5 +1,5 @@
 import React, { useRef, useEffect, lazy, Suspense } from "react";
-
+import ScrollToTopButton from "../../components/ScrollToTopButton";
 const LazyAbout = lazy(() => import("../About"));
 const LazyProjects = lazy(() => import("../Projects"));
 const LazyResume = lazy(() => import("../Resume"));
@@ -31,6 +31,7 @@ export default function MainPage() {
 
   return (
     <div className="App-mainPage" style={styles.appMainPageContainer}>
+      <ScrollToTopButton/>
       <section style={styles.spacer}>
         <img style={styles.backGroundImage} src="./images/myWorkImage.png"/> 
       </section>
