@@ -15,8 +15,8 @@ const AboutMeData = [
         description: ""
     },
     {
-        title: "My Educations",
-        summary: "After discovering a passion for engineering in high school, I gained practical experience in AutoCAD and electrical installation drawings through a co-op placement. Following my manager's advice on the importance of combining engineering with business knowledge, I pursued McMaster University's Engineering and Management program, a unique blend of technical engineering, finance, accounting, and more. Excelling in technical subjects, I sought a holistic education. Post-graduation, I embraced the University of Toronto's Coding Bootcamp to integrate my technical prowess with comprehensive business skills. My goal is to leverage technology for efficient and effective business processes. In 2022, my curiosity led me to delve into database architecture, self-learning Python and Postgres, further enriching my skill set.",
+        title: "My Education",
+        summary: "After discovering a passion for engineering in high school, I gained practical experience in AutoCAD and electrical installation drawings through a co-op placement. Following my manager's advice on the importance of combining engineering with business knowledge, I pursued McMaster University's Engineering and Management program, a unique blend of technical engineering, finance, accounting, and more. Excelling in technical subjects, I sought a holistic education. Post-graduation, I embraced the University of Toronto's Coding Bootcamp to integrate my technical prowess with comprehensive business skills. My goal is to leverage technology for efficient and effective business processes. My curiosity led me to delve into database architecture, self-learning Python and Postgres, further enriching my skill set. Subsequently I embarked on a journey to master JavaScript and MERN Stack software development.",
         description: ""
     },
     {
@@ -25,8 +25,8 @@ const AboutMeData = [
         description: ""
     },
     {
-        title: "My Personal Challenges",
-        summary: "Over six years, I founded a prosperous B2B enterprise specializing in laser scanning for construction sites. Recognized for cutting-edge solutions, the business enhanced efficiency and precision. With established standards, it served clients in Canada, the US, and the Caribbean, showcasing success in the dynamic construction industry."
+        title: "My Personal Challenge",
+        summary: "Across a span of six years, I founded a prosperous B2B enterprise specializing in the application of laser scanning technology within the construction industry. Recognized for cutting-edge solutions, the business enhanced efficiency and precision. This experience allowed me to navigate the dynamic landscape of construction projects, serving clients not only within Canada but also extending services to the United States and the Caribbean. Despite profitability, influenced by lessons in strategic thinking, particularly from Professor Nick Bontis at McMaster, I questioned the business's long-term scalability. Recognizing the need for precision in sensitive equipment handling, I realized it wasn't a long-term fit. This realization fueled my search for new and challenging career opportunities."
     },
     {
         title: "My Future Outlook",
