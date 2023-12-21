@@ -118,7 +118,7 @@ p {
   margin-right: 15px;
   a {
       text-decoration: none;
-      color: #fff;
+      color: #fff !important;
       position: relative;
       transition: color 0.3s;
       font-size: 18px;

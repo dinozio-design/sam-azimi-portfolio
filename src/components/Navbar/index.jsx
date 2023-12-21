@@ -12,7 +12,7 @@ export default function Navbar(){
       <ul className="navlinks">
         <li>
           <a href="#about" className={activeLink === 0 ? "active" : ""}
-            onClick={() => handleLinkClick(0)}>About</a>
+            onClick={() => handleLinkClick(0)}>About Me</a>
         </li>
         <li>
           <a href="#projects" className={activeLink === 1 ? "active" : ""}

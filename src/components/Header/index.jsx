@@ -46,7 +46,7 @@ export default function Header() {
                     </a> <Tooltip id="TEL-tooltip" opacity={.5} style={{ fontSize: "12px" }} />
                 </div>
                 <div className="myImage">
-                    <a href="" target="_blank" rel="noopener noreferrer">
+                    <a href="/" target="_blank" rel="noopener noreferrer">
                         <img style={styles.myImage} src="./images/developerPicture.png" alt="My Picture" />
                     </a>
                 </div>
