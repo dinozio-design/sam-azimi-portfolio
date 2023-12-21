@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "/sam-azimi-portfolio/static/css/main.da00da13.css",
-    "main.js": "/sam-azimi-portfolio/static/js/main.32907a8f.js",
+    "main.js": "/sam-azimi-portfolio/static/js/main.a79d21d4.js",
     "static/js/142.f7ee2a83.chunk.js": "/sam-azimi-portfolio/static/js/142.f7ee2a83.chunk.js",
-    "static/js/333.c766caf0.chunk.js": "/sam-azimi-portfolio/static/js/333.c766caf0.chunk.js",
+    "static/js/333.abc0888a.chunk.js": "/sam-azimi-portfolio/static/js/333.abc0888a.chunk.js",
     "static/js/183.43687e44.chunk.js": "/sam-azimi-portfolio/static/js/183.43687e44.chunk.js",
     "static/js/817.96e3d61f.chunk.js": "/sam-azimi-portfolio/static/js/817.96e3d61f.chunk.js",
     "static/js/787.16f6715e.chunk.js": "/sam-azimi-portfolio/static/js/787.16f6715e.chunk.js",
@@ -14,9 +14,9 @@
     "static/media/SamAzimiResume.pdf": "/sam-azimi-portfolio/static/media/SamAzimiResume.f1680569422838d20223.pdf",
     "index.html": "/sam-azimi-portfolio/index.html",
     "main.da00da13.css.map": "/sam-azimi-portfolio/static/css/main.da00da13.css.map",
-    "main.32907a8f.js.map": "/sam-azimi-portfolio/static/js/main.32907a8f.js.map",
+    "main.a79d21d4.js.map": "/sam-azimi-portfolio/static/js/main.a79d21d4.js.map",
     "142.f7ee2a83.chunk.js.map": "/sam-azimi-portfolio/static/js/142.f7ee2a83.chunk.js.map",
-    "333.c766caf0.chunk.js.map": "/sam-azimi-portfolio/static/js/333.c766caf0.chunk.js.map",
+    "333.abc0888a.chunk.js.map": "/sam-azimi-portfolio/static/js/333.abc0888a.chunk.js.map",
     "183.43687e44.chunk.js.map": "/sam-azimi-portfolio/static/js/183.43687e44.chunk.js.map",
     "817.96e3d61f.chunk.js.map": "/sam-azimi-portfolio/static/js/817.96e3d61f.chunk.js.map",
     "787.16f6715e.chunk.js.map": "/sam-azimi-portfolio/static/js/787.16f6715e.chunk.js.map",
@@ -24,6 +24,6 @@
   },
   "entrypoints": [
     "static/css/main.da00da13.css",
-    "static/js/main.32907a8f.js"
+    "static/js/main.a79d21d4.js"
   ]
 }
