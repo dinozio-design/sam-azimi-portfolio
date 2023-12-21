@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState, lazy, Suspense } from "react";
+import React, { lazy, Suspense } from "react";
 import { useInView } from "react-intersection-observer";
 import ScrollToTopButton from "../../components/ScrollToTopButton";
 import { BsRocketTakeoff } from "react-icons/bs";
@@ -35,7 +35,7 @@ export default function MainPage() {
     <div className="App-mainPage" style={styles.appMainPageContainer}>
       <ScrollToTopButton />
       <section id="about" style={styles.spacer}>
-        <img style={styles.backGroundImage} src="./images/myWorkImage.png" />
+        <img style={styles.backGroundImage} src="./images/myWorkImage.png" alt="chalk line drawings of a man standing behind a laser scanning a 3d building"/>
       </section>
       <div style={styles.fadeIn}>
         <Suspense fallback={<div>Loading About...</div>}>
@@ -43,7 +43,7 @@ export default function MainPage() {
         </Suspense>
       </div>
       <section id="projects" style={styles.spacer}>
-        <img style={styles.backGroundImage} src="./images/backgroundImage.png" />
+        <img style={styles.backGroundImage} src="./images/backgroundImage.png" alt="rainbow color stripes of briliant colors and paint brushes"/>
       </section>
       <section ref={rocketRef}>
         <Suspense fallback={<div>Loading Projects...</div>}>
