@@ -9,6 +9,7 @@ const styles = {
         margin: "4px"
     },
     bodyText: {
+        marginTop: "10px",
         textAlign: "justify"
     }
 };
